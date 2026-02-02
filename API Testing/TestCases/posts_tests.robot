@@ -1,6 +1,9 @@
 *** Settings ***
 Resource    ../Resources/posts_keywords.resource
 
+Test Setup    Create API Session
+Test Teardown    Close API Session
+
 *** Variables ***
 ${get_post_id}    1
 
