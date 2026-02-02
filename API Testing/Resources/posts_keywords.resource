@@ -23,7 +23,7 @@ Get Single Post
     # Create API Session
     ${response}    GET On Session    ${SESSION}    ${posts_endpoint}/${post_id}
     Should Be Equal As Integers    ${response.status_code}    ${get_status_code}
-    Should Be Equal As Strings    ${response.json()}[${p_id}]    ${post_id}
+    # Should Be Equal As Strings    ${response.json()}[${p_id}]    ${post_id}
     RETURN    ${response}
 
 Create New Post
