@@ -14,14 +14,14 @@ Close API Session
 Get All Todos
     # Create API Session
     ${response}    GET On Session    ${SESSION}    ${todos_endpoint}
-    Should Be Equal As Integers    ${response.status_code}    ${get_status_code}
+    Should Be Equal As Integers    ${response.status_code}    ${success_status_code}
     RETURN    ${response}
 
 Get Single Todo
     [Arguments]    ${todo_id}
     # Create API Session
     ${response}    GET On Session    ${SESSION}    ${todos_endpoint}/${todo_id}
-    Should Be Equal As Integers    ${response.status_code}    ${get_status_code}
+    Should Be Equal As Integers    ${response.status_code}    ${success_status_code}
     RETURN    ${response}
 
 Create New Todo
@@ -29,7 +29,7 @@ Create New Todo
     # Create API Session
     &{data}    Create Dictionary    title=${title}    completed=${completed}    userId=${userId}
     ${response}    POST On Session    ${SESSION}    ${todos_endpoint}    json=${data}
-    Should Be Equal As Integers    ${response.status_code}    ${post_status_code}
+    Should Be Equal As Integers    ${response.status_code}    ${created_status_code}
     RETURN    ${response}
 
 Update Existing Todo
@@ -37,7 +37,7 @@ Update Existing Todo
     # Create API Session
     &{data}    Create Dictionary    id=${todo_id}    title=${title}    completed=${completed}    userId=${userId}
     ${response}    PUT On Session    ${SESSION}    ${todos_endpoint}/${todo_id}    ${data}
-    Should Be Equal As Integers    ${response.status_code}    ${put_status_code}
+    Should Be Equal As Integers    ${response.status_code}    ${success_status_code}
     RETURN    ${response}
 
 Patch Title of Todo
@@ -45,12 +45,12 @@ Patch Title of Todo
     # Create API Session
     &{data}    Create Dictionary    title=${title}
     ${response}    PATCH On Session    ${SESSION}    ${todos_endpoint}/${todo_id}    ${data}
-    Should Be Equal As Integers    ${response.status_code}    ${patch_status_code}
+    Should Be Equal As Integers    ${response.status_code}    ${success_status_code}
     RETURN    ${response}
 
 Delete A Todo
     [Arguments]    ${todo_id}
     # Create API Session
     ${response}    DELETE On Session    ${SESSION}    ${todos_endpoint}/${todo_id}
-    Should Be Equal As Integers    ${response.status_code}    ${delete_status_code}
+    Should Be Equal As Integers    ${response.status_code}    ${success_status_code}
     RETURN    ${response}

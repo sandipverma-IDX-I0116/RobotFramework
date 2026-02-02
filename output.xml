@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-02T14:27:28.246052" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-02T15:05:04.683099" rpa="false" schemaversion="5">
 <suite id="s1" name="Todos Tests" source="C:\Users\Sandip.Verma\Desktop\RobotFramework\API Testing\TestCases\todos_tests.robot">
 <test id="s1-t1" name="Get All Todos" line="26">
 <kw name="Create API Session" owner="todos_keywords" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:28.513137" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-02-02T15:05:04.939984" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>${SESSION}</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-02-02T14:27:28.512921" elapsed="0.000396"/>
+<status status="PASS" start="2026-02-02T15:05:04.939821" elapsed="0.000318"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:28.512042" elapsed="0.001374"/>
+<status status="PASS" start="2026-02-02T15:05:04.939229" elapsed="0.000999"/>
 </kw>
 <kw name="Get All Todos" owner="todos_keywords">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:28.807866" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/todos 
+<msg time="2026-02-02T15:05:05.193712" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/todos 
  path_url=/todos 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-02-02T14:27:28.808005" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/todos 
+<msg time="2026-02-02T15:05:05.194061" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/todos 
  status=200, reason=OK 
- headers={'Date': 'Mon, 02 Feb 2026 08:57:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '4005', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'Content-Encoding': 'gzip', 'etag': 'W/"5ef7-4Ad6/n39KWY9q6Ykm/ULNQ2F5IM"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=TkrmKQGTlYliQWxZHDGNcv3cfr%2FbFhFRU33ufHLG3a4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1769489423"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=TkrmKQGTlYliQWxZHDGNcv3cfr%2FbFhFRU33ufHLG3a4%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1769489423"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1769489428', 'Age': '13144', 'Accept-Ranges': 'bytes', 'cf-cache-status': 'HIT', 'CF-RAY': '9c787b33caaace46-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 02 Feb 2026 09:35:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '4005', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'Content-Encoding': 'gzip', 'etag': 'W/"5ef7-4Ad6/n39KWY9q6Ykm/ULNQ2F5IM"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=TkrmKQGTlYliQWxZHDGNcv3cfr%2FbFhFRU33ufHLG3a4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1769489423"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=TkrmKQGTlYliQWxZHDGNcv3cfr%2FbFhFRU33ufHLG3a4%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1769489423"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1769489428', 'Age': '15401', 'Accept-Ranges': 'bytes', 'cf-cache-status': 'HIT', 'CF-RAY': '9c78b24a2ad651fc-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "userId": 1,
@@ -520,65 +520,65 @@
     "id": 83,
     "title": "quidem at rerum q... (set the log level to DEBUG or TRACE to see the full content) 
  </msg>
-<msg time="2026-02-02T14:27:28.808153" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-02-02T15:05:05.194528" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-02-02T14:27:28.808788" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:05.195495" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${SESSION}</arg>
 <arg>${todos_endpoint}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-02-02T14:27:28.514123" elapsed="0.294770"/>
+<status status="PASS" start="2026-02-02T15:05:04.940854" elapsed="0.254774"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
-<arg>${get_status_code}</arg>
+<arg>${success_status_code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-02T14:27:28.809234" elapsed="0.000732"/>
+<status status="PASS" start="2026-02-02T15:05:05.196161" elapsed="0.001937"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-02-02T14:27:28.810025" elapsed="0.000059"/>
+<status status="PASS" start="2026-02-02T15:05:05.198292" elapsed="0.000166"/>
 </return>
-<msg time="2026-02-02T14:27:28.810205" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:05.198817" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
-<status status="PASS" start="2026-02-02T14:27:28.513919" elapsed="0.296307"/>
+<status status="PASS" start="2026-02-02T15:05:04.940641" elapsed="0.258248"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:28.810506" elapsed="0.002186"/>
+<status status="PASS" start="2026-02-02T15:05:05.199507" elapsed="0.002350"/>
 </kw>
 <kw name="Close API Session" owner="todos_keywords" type="TEARDOWN">
 <kw name="Delete All Sessions" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:28.813374" level="INFO">Deleting All Sessions</msg>
+<msg time="2026-02-02T15:05:05.202683" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2026-02-02T14:27:28.813310" elapsed="0.000133"/>
+<status status="PASS" start="2026-02-02T15:05:05.202554" elapsed="0.000232"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:28.813090" elapsed="0.000410"/>
+<status status="PASS" start="2026-02-02T15:05:05.202279" elapsed="0.000574"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:28.511132" elapsed="0.302587"/>
+<status status="PASS" start="2026-02-02T15:05:04.938453" elapsed="0.264643"/>
 </test>
 <test id="s1-t2" name="Get Single Todo" line="30">
 <kw name="Create API Session" owner="todos_keywords" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:28.815700" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-02-02T15:05:05.204828" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>${SESSION}</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-02-02T14:27:28.815486" elapsed="0.000428"/>
+<status status="PASS" start="2026-02-02T15:05:05.204667" elapsed="0.000299"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:28.815171" elapsed="0.000851"/>
+<status status="PASS" start="2026-02-02T15:05:05.204379" elapsed="0.000659"/>
 </kw>
 <kw name="Get Single Todo" owner="todos_keywords">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:29.121474" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:05.460341" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/todos/1 
  path_url=/todos/1 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-02-02T14:27:29.121738" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:05.460608" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/todos/1 
  status=200, reason=OK 
- headers={'Date': 'Mon, 02 Feb 2026 08:57:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"53-hfEnumeNh6YirfjyjaujcOPPT+s"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=hVtTJqusmsR0sOTihlOypcmK%2BKWyQbladA51Ji0XRSg%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1769928087"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=hVtTJqusmsR0sOTihlOypcmK%2BKWyQbladA51Ji0XRSg%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1769928087"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1769928098', 'Age': '8159', 'cf-cache-status': 'HIT', 'Content-Encoding': 'zstd', 'CF-RAY': '9c787b359dd6fd7c-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 02 Feb 2026 09:35:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"53-hfEnumeNh6YirfjyjaujcOPPT+s"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=hVtTJqusmsR0sOTihlOypcmK%2BKWyQbladA51Ji0XRSg%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1769928087"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=hVtTJqusmsR0sOTihlOypcmK%2BKWyQbladA51Ji0XRSg%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1769928087"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1769928098', 'Age': '10416', 'cf-cache-status': 'HIT', 'Content-Encoding': 'zstd', 'CF-RAY': '9c78b24bdb4ff916-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "userId": 1,
   "id": 1,
@@ -586,75 +586,75 @@
   "completed": false
 } 
  </msg>
-<msg time="2026-02-02T14:27:29.121916" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-02-02T15:05:05.460794" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-02-02T14:27:29.122755" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:05.461691" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${SESSION}</arg>
 <arg>${todos_endpoint}/${todo_id}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-02-02T14:27:28.816733" elapsed="0.306121"/>
+<status status="PASS" start="2026-02-02T15:05:05.205706" elapsed="0.256095"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
-<arg>${get_status_code}</arg>
+<arg>${success_status_code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.123198" elapsed="0.001678"/>
+<status status="PASS" start="2026-02-02T15:05:05.462285" elapsed="0.001961"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-02-02T14:27:29.125040" elapsed="0.000123"/>
+<status status="PASS" start="2026-02-02T15:05:05.464431" elapsed="0.000128"/>
 </return>
-<msg time="2026-02-02T14:27:29.125480" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:05.464897" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${get_todo_id}</arg>
-<status status="PASS" start="2026-02-02T14:27:28.816380" elapsed="0.309169"/>
+<status status="PASS" start="2026-02-02T15:05:05.205396" elapsed="0.259571"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.126240" elapsed="0.001827"/>
+<status status="PASS" start="2026-02-02T15:05:05.465556" elapsed="0.001901"/>
 </kw>
 <kw name="Close API Session" owner="todos_keywords" type="TEARDOWN">
 <kw name="Delete All Sessions" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:29.129165" level="INFO">Deleting All Sessions</msg>
+<msg time="2026-02-02T15:05:05.468774" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2026-02-02T14:27:29.129053" elapsed="0.000213"/>
+<status status="PASS" start="2026-02-02T15:05:05.468639" elapsed="0.000255"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:29.128681" elapsed="0.000679"/>
+<status status="PASS" start="2026-02-02T15:05:05.468208" elapsed="0.000798"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:28.814581" elapsed="0.315188"/>
+<status status="PASS" start="2026-02-02T15:05:05.203787" elapsed="0.265511"/>
 </test>
 <test id="s1-t3" name="Create New Todo" line="34">
 <kw name="Create API Session" owner="todos_keywords" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:29.132296" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-02-02T15:05:05.472202" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>${SESSION}</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-02-02T14:27:29.132048" elapsed="0.000445"/>
+<status status="PASS" start="2026-02-02T15:05:05.471951" elapsed="0.000492"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:29.131695" elapsed="0.000903"/>
+<status status="PASS" start="2026-02-02T15:05:05.471430" elapsed="0.001182"/>
 </kw>
 <kw name="Create New Todo" owner="todos_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-02-02T14:27:29.139232" level="INFO">&amp;{data} = { title=This is Robot Framework Test Todo | completed=False | userId=10 }</msg>
+<msg time="2026-02-02T15:05:05.480278" level="INFO">&amp;{data} = { title=This is Robot Framework Test Todo | completed=False | userId=10 }</msg>
 <var>&amp;{data}</var>
 <arg>title=${title}</arg>
 <arg>completed=${completed}</arg>
 <arg>userId=${userId}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.138468" elapsed="0.000805"/>
+<status status="PASS" start="2026-02-02T15:05:05.479534" elapsed="0.000788"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:29.559094" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/todos 
+<msg time="2026-02-02T15:05:06.348692" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/todos 
  path_url=/todos 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '84', 'Content-Type': 'application/json'} 
  body=b'{"title": "This is Robot Framework Test Todo", "completed": "False", "userId": "10"}' 
  </msg>
-<msg time="2026-02-02T14:27:29.559298" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/todos 
+<msg time="2026-02-02T15:05:06.348949" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/todos 
  status=201, reason=Created 
- headers={'Date': 'Mon, 02 Feb 2026 08:57:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '105', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"69-5iAStu/7QyXjzOGC3nysfAlXii4"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/todos/201', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=O%2FZB6M2UdpeEblR984ep9XLHkVgO85VkZ7DDDD8S3eU%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770022649"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=O%2FZB6M2UdpeEblR984ep9XLHkVgO85VkZ7DDDD8S3eU%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770022649"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '995', 'x-ratelimit-reset': '1770022682', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9c787b371e6afede-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 02 Feb 2026 09:35:06 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '105', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"69-5iAStu/7QyXjzOGC3nysfAlXii4"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/todos/201', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xapciBex3zuzDC7Ub37JxA7hyG1Em1j2zG1QKZ%2Fz%2FoE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770024906"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=xapciBex3zuzDC7Ub37JxA7hyG1Em1j2zG1QKZ%2Fz%2FoE%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770024906"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1770024962', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9c78b24d58d87b39-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "title": "This is Robot Framework Test Todo",
   "completed": "False",
@@ -662,79 +662,79 @@
   "id": 201
 } 
  </msg>
-<msg time="2026-02-02T14:27:29.560117" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-02-02T15:05:06.349983" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-02-02T14:27:29.560549" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<msg time="2026-02-02T15:05:06.350834" level="INFO">${response} = &lt;Response [201]&gt;</msg>
 <var>${response}</var>
 <arg>${SESSION}</arg>
 <arg>${todos_endpoint}</arg>
 <arg>json=${data}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.139436" elapsed="0.421183"/>
+<status status="PASS" start="2026-02-02T15:05:05.480490" elapsed="0.870432"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
-<arg>${post_status_code}</arg>
+<arg>${created_status_code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.560877" elapsed="0.001155"/>
+<status status="PASS" start="2026-02-02T15:05:06.351256" elapsed="0.001630"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-02-02T14:27:29.562170" elapsed="0.000073"/>
+<status status="PASS" start="2026-02-02T15:05:06.353046" elapsed="0.000095"/>
 </return>
-<msg time="2026-02-02T14:27:29.562457" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<msg time="2026-02-02T15:05:06.353434" level="INFO">${response} = &lt;Response [201]&gt;</msg>
 <var>${response}</var>
 <arg>${create_todo_title}</arg>
 <arg>${create_todo_completed}</arg>
 <arg>${create_todo_userId}</arg>
-<status status="PASS" start="2026-02-02T14:27:29.133011" elapsed="0.429486"/>
+<status status="PASS" start="2026-02-02T15:05:05.473175" elapsed="0.880326"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.562939" elapsed="0.001249"/>
+<status status="PASS" start="2026-02-02T15:05:06.354224" elapsed="0.002060"/>
 </kw>
 <kw name="Close API Session" owner="todos_keywords" type="TEARDOWN">
 <kw name="Delete All Sessions" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:29.565165" level="INFO">Deleting All Sessions</msg>
+<msg time="2026-02-02T15:05:06.358013" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2026-02-02T14:27:29.565032" elapsed="0.000240"/>
+<status status="PASS" start="2026-02-02T15:05:06.357846" elapsed="0.000303"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:29.564666" elapsed="0.000701"/>
+<status status="PASS" start="2026-02-02T15:05:06.357257" elapsed="0.001030"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:29.131031" elapsed="0.434535"/>
+<status status="PASS" start="2026-02-02T15:05:05.470551" elapsed="0.888169"/>
 </test>
 <test id="s1-t4" name="Update Existing Todo" line="38">
 <kw name="Create API Session" owner="todos_keywords" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:29.567480" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-02-02T15:05:06.362447" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>${SESSION}</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-02-02T14:27:29.567255" elapsed="0.000412"/>
+<status status="PASS" start="2026-02-02T15:05:06.362095" elapsed="0.000811"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:29.566895" elapsed="0.000863"/>
+<status status="PASS" start="2026-02-02T15:05:06.361557" elapsed="0.001555"/>
 </kw>
 <kw name="Update Existing Todo" owner="todos_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-02-02T14:27:29.569591" level="INFO">&amp;{data} = { id=1 | title=This is Updated Todo Title | completed=True | userId=10 }</msg>
+<msg time="2026-02-02T15:05:06.365546" level="INFO">&amp;{data} = { id=1 | title=This is Updated Todo Title | completed=True | userId=10 }</msg>
 <var>&amp;{data}</var>
 <arg>id=${todo_id}</arg>
 <arg>title=${title}</arg>
 <arg>completed=${completed}</arg>
 <arg>userId=${userId}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.568822" elapsed="0.000842"/>
+<status status="PASS" start="2026-02-02T15:05:06.364483" elapsed="0.001145"/>
 </kw>
 <kw name="PUT On Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:30.695115" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:06.819125" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/todos/1 
  path_url=/todos/1 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '62', 'Content-Type': 'application/x-www-form-urlencoded'} 
  body=id=1&amp;title=This+is+Updated+Todo+Title&amp;completed=True&amp;userId=10 
  </msg>
-<msg time="2026-02-02T14:27:30.695340" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:06.819216" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/todos/1 
  status=200, reason=OK 
- headers={'Date': 'Mon, 02 Feb 2026 08:57:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'no-cache', 'etag': 'W/"5f-InRnk6Bx5TmRDvXqGnZRTSrw1Wk"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=OCwet%2F%2FG9i30%2FSqvjrgJDyAI6TZ6%2BIzwFmPzJiZIYYM%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770022650"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=OCwet%2F%2FG9i30%2FSqvjrgJDyAI6TZ6%2BIzwFmPzJiZIYYM%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770022650"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '994', 'x-ratelimit-reset': '1770022682', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'zstd', 'CF-RAY': '9c787b3a79cfed99-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 02 Feb 2026 09:35:06 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'no-cache', 'etag': 'W/"5f-InRnk6Bx5TmRDvXqGnZRTSrw1Wk"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xapciBex3zuzDC7Ub37JxA7hyG1Em1j2zG1QKZ%2Fz%2FoE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770024906"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=xapciBex3zuzDC7Ub37JxA7hyG1Em1j2zG1QKZ%2Fz%2FoE%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770024906"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '998', 'x-ratelimit-reset': '1770024962', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'zstd', 'CF-RAY': '9c78b252fb643dbf-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 1,
   "title": "This is Updated Todo Title",
@@ -742,77 +742,77 @@
   "userId": "10"
 } 
  </msg>
-<msg time="2026-02-02T14:27:30.695591" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-02-02T15:05:06.819307" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-02-02T14:27:30.696427" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:06.819679" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${SESSION}</arg>
 <arg>${todos_endpoint}/${todo_id}</arg>
 <arg>${data}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-02-02T14:27:29.569941" elapsed="1.126594"/>
+<status status="PASS" start="2026-02-02T15:05:06.365894" elapsed="0.453821"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
-<arg>${put_status_code}</arg>
+<arg>${success_status_code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-02T14:27:30.697077" elapsed="0.001982"/>
+<status status="PASS" start="2026-02-02T15:05:06.819890" elapsed="0.000807"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-02-02T14:27:30.699241" elapsed="0.000105"/>
+<status status="PASS" start="2026-02-02T15:05:06.820787" elapsed="0.000058"/>
 </return>
-<msg time="2026-02-02T14:27:30.699685" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:06.820991" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${update_todo_id}</arg>
 <arg>${update_todo_title}</arg>
 <arg>${update_todo_completed}</arg>
 <arg>${update_todo_userId}</arg>
-<status status="PASS" start="2026-02-02T14:27:29.568199" elapsed="1.131562"/>
+<status status="PASS" start="2026-02-02T15:05:06.363790" elapsed="0.457224"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:30.700472" elapsed="0.001559"/>
+<status status="PASS" start="2026-02-02T15:05:06.821336" elapsed="0.000804"/>
 </kw>
 <kw name="Close API Session" owner="todos_keywords" type="TEARDOWN">
 <kw name="Delete All Sessions" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:30.703458" level="INFO">Deleting All Sessions</msg>
+<msg time="2026-02-02T15:05:06.822793" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2026-02-02T14:27:30.703340" elapsed="0.000242"/>
+<status status="PASS" start="2026-02-02T15:05:06.822730" elapsed="0.000117"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:30.702785" elapsed="0.000885"/>
+<status status="PASS" start="2026-02-02T15:05:06.822500" elapsed="0.000399"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:29.566181" elapsed="1.137791"/>
+<status status="PASS" start="2026-02-02T15:05:06.360533" elapsed="0.462633"/>
 </test>
 <test id="s1-t5" name="Patch Title of Todo" line="42">
 <kw name="Create API Session" owner="todos_keywords" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:30.706070" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-02-02T15:05:06.824753" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>${SESSION}</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-02-02T14:27:30.705826" elapsed="0.000465"/>
+<status status="PASS" start="2026-02-02T15:05:06.824641" elapsed="0.000220"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:30.705439" elapsed="0.000970"/>
+<status status="PASS" start="2026-02-02T15:05:06.824467" elapsed="0.000448"/>
 </kw>
 <kw name="Patch Title of Todo" owner="todos_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-02-02T14:27:30.707792" level="INFO">&amp;{data} = { title=This is Partially Updated Todo Title }</msg>
+<msg time="2026-02-02T15:05:06.825755" level="INFO">&amp;{data} = { title=This is Partially Updated Todo Title }</msg>
 <var>&amp;{data}</var>
 <arg>title=${title}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-02-02T14:27:30.707223" elapsed="0.000613"/>
+<status status="PASS" start="2026-02-02T15:05:06.825486" elapsed="0.000292"/>
 </kw>
 <kw name="PATCH On Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:31.672011" level="INFO">PATCH Request : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:07.704800" level="INFO">PATCH Request : url=https://jsonplaceholder.typicode.com/todos/1 
  path_url=/todos/1 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '42', 'Content-Type': 'application/x-www-form-urlencoded'} 
  body=title=This+is+Partially+Updated+Todo+Title 
  </msg>
-<msg time="2026-02-02T14:27:31.672236" level="INFO">PATCH Response : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:07.705010" level="INFO">PATCH Response : url=https://jsonplaceholder.typicode.com/todos/1 
  status=200, reason=OK 
- headers={'Date': 'Mon, 02 Feb 2026 08:57:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'no-cache', 'etag': 'W/"65-3JId/FvCBkdIKvtvV8y6vJWofyI"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=v1INFSWxEbQaEW18eEqRTzpCwkETELCqGcQVl1tMOIM%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770022651"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=v1INFSWxEbQaEW18eEqRTzpCwkETELCqGcQVl1tMOIM%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770022651"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '993', 'x-ratelimit-reset': '1770022682', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'zstd', 'CF-RAY': '9c787b417d44f93c-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 02 Feb 2026 09:35:07 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'no-cache', 'etag': 'W/"65-3JId/FvCBkdIKvtvV8y6vJWofyI"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=BIGlCmljhVXsnRTuQ7DndAKj92P8kuhU9dUh0m1abj8%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770024907"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=BIGlCmljhVXsnRTuQ7DndAKj92P8kuhU9dUh0m1abj8%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770024907"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '997', 'x-ratelimit-reset': '1770024962', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'zstd', 'CF-RAY': '9c78b255d9a44021-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "userId": 1,
   "id": 1,
@@ -820,115 +820,115 @@
   "completed": false
 } 
  </msg>
-<msg time="2026-02-02T14:27:31.672399" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-02-02T15:05:07.705154" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-02-02T14:27:31.673174" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:07.705978" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${SESSION}</arg>
 <arg>${todos_endpoint}/${todo_id}</arg>
 <arg>${data}</arg>
 <doc>Sends a PATCH request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-02-02T14:27:30.708012" elapsed="0.965256"/>
+<status status="PASS" start="2026-02-02T15:05:06.825854" elapsed="0.880211"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
-<arg>${patch_status_code}</arg>
+<arg>${success_status_code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-02T14:27:31.673610" elapsed="0.001816"/>
+<status status="PASS" start="2026-02-02T15:05:07.706409" elapsed="0.001707"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-02-02T14:27:31.675590" elapsed="0.000098"/>
+<status status="PASS" start="2026-02-02T15:05:07.708275" elapsed="0.000096"/>
 </return>
-<msg time="2026-02-02T14:27:31.675987" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:07.708670" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${patch_todo_id}</arg>
 <arg>${patch_todo_title}</arg>
-<status status="PASS" start="2026-02-02T14:27:30.706778" elapsed="0.969276"/>
+<status status="PASS" start="2026-02-02T15:05:06.825254" elapsed="0.883483"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:31.676720" elapsed="0.001589"/>
+<status status="PASS" start="2026-02-02T15:05:07.709422" elapsed="0.001917"/>
 </kw>
 <kw name="Close API Session" owner="todos_keywords" type="TEARDOWN">
 <kw name="Delete All Sessions" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:31.679067" level="INFO">Deleting All Sessions</msg>
+<msg time="2026-02-02T15:05:07.712774" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2026-02-02T14:27:31.679003" elapsed="0.000142"/>
+<status status="PASS" start="2026-02-02T15:05:07.712613" elapsed="0.000286"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:31.678752" elapsed="0.000448"/>
+<status status="PASS" start="2026-02-02T15:05:07.712001" elapsed="0.001019"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:30.704848" elapsed="0.974605"/>
+<status status="PASS" start="2026-02-02T15:05:06.824021" elapsed="0.889390"/>
 </test>
 <test id="s1-t6" name="Delete A Todo" line="46">
 <kw name="Create API Session" owner="todos_keywords" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:31.681181" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-02-02T15:05:07.715428" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>${SESSION}</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-02-02T14:27:31.681001" elapsed="0.000344"/>
+<status status="PASS" start="2026-02-02T15:05:07.715271" elapsed="0.000300"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:31.680754" elapsed="0.000669"/>
+<status status="PASS" start="2026-02-02T15:05:07.715023" elapsed="0.000622"/>
 </kw>
 <kw name="Delete A Todo" owner="todos_keywords">
 <kw name="DELETE On Session" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:32.190433" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:08.577359" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/todos/1 
  path_url=/todos/1 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg time="2026-02-02T14:27:32.190709" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/todos/1 
+<msg time="2026-02-02T15:05:08.577457" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/todos/1 
  status=200, reason=OK 
- headers={'Date': 'Mon, 02 Feb 2026 08:57:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'no-cache', 'etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=rrGzNornjagAorDD4W%2BN9eKsY48ark%2Bs5wk3NUAPJ%2Fo%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770022652"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=rrGzNornjagAorDD4W%2BN9eKsY48ark%2Bs5wk3NUAPJ%2Fo%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770022652"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '992', 'x-ratelimit-reset': '1770022682', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'zstd', 'CF-RAY': '9c787b4758b19c20-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 02 Feb 2026 09:35:08 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'no-cache', 'etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=yfjeGY9ZaYZdPMQ5JmbUkXNgmMU8OrZF%2B0yY3alAKe8%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1770024908"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=yfjeGY9ZaYZdPMQ5JmbUkXNgmMU8OrZF%2B0yY3alAKe8%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1770024908"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '996', 'x-ratelimit-reset': '1770024962', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'zstd', 'CF-RAY': '9c78b25b4a8dce3d-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={} 
  </msg>
-<msg time="2026-02-02T14:27:32.190951" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-02-02T15:05:08.577549" level="INFO">C:\Users\Sandip.Verma\Desktop\RobotFramework\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-02-02T14:27:32.191891" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:08.577973" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${SESSION}</arg>
 <arg>${todos_endpoint}/${todo_id}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-02-02T14:27:31.682089" elapsed="0.509932"/>
+<status status="PASS" start="2026-02-02T15:05:07.716392" elapsed="0.861650"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
-<arg>${delete_status_code}</arg>
+<arg>${success_status_code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-02T14:27:32.192506" elapsed="0.002093"/>
+<status status="PASS" start="2026-02-02T15:05:08.578252" elapsed="0.000683"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-02-02T14:27:32.194793" elapsed="0.000113"/>
+<status status="PASS" start="2026-02-02T15:05:08.578997" elapsed="0.000040"/>
 </return>
-<msg time="2026-02-02T14:27:32.195272" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-02T15:05:08.579152" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${delete_todo_id}</arg>
-<status status="PASS" start="2026-02-02T14:27:31.681799" elapsed="0.513577"/>
+<status status="PASS" start="2026-02-02T15:05:07.716087" elapsed="0.863088"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:32.196211" elapsed="0.001350"/>
+<status status="PASS" start="2026-02-02T15:05:08.579495" elapsed="0.000673"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Deleted Status = ${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-02T14:27:32.197825" elapsed="0.001080"/>
+<status status="PASS" start="2026-02-02T15:05:08.580343" elapsed="0.000645"/>
 </kw>
 <kw name="Close API Session" owner="todos_keywords" type="TEARDOWN">
 <kw name="Delete All Sessions" owner="RequestsLibrary">
-<msg time="2026-02-02T14:27:32.199594" level="INFO">Deleting All Sessions</msg>
+<msg time="2026-02-02T15:05:08.581582" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2026-02-02T14:27:32.199522" elapsed="0.000139"/>
+<status status="PASS" start="2026-02-02T15:05:08.581512" elapsed="0.000121"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:32.199273" elapsed="0.000446"/>
+<status status="PASS" start="2026-02-02T15:05:08.581290" elapsed="0.000411"/>
 </kw>
-<status status="PASS" start="2026-02-02T14:27:31.680217" elapsed="0.519704"/>
+<status status="PASS" start="2026-02-02T15:05:07.714518" elapsed="0.867466"/>
 </test>
-<status status="PASS" start="2026-02-02T14:27:28.248552" elapsed="3.952181"/>
+<status status="PASS" start="2026-02-02T15:05:04.685908" elapsed="3.897014"/>
 </suite>
 <statistics>
 <total>
